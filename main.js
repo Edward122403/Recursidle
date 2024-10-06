@@ -1,4 +1,4 @@
-const storyText = [
+const storyParts = [
   "I'm so excited to play the new incremental game everybody's talking about",
   "It's been three weeks, but I've finally saved up enough to get it.",
   "Looks like some sort of RPG styled incremental... Should be pretty easy.",
