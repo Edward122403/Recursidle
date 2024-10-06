@@ -5,17 +5,21 @@ const storyText = [
   // Add more story segments as desired
 ];
 
-let currentIndex = 0;
+let currentStoryPart = 0;
 
-const storyContainer = document.getElementById('story-text');
+const storyTextElement = document.getElementById('story-text');
 const nextButton = document.getElementById('next-button');
+const storyContainer = document.getElementById('story-container');
+const gameContainer = document.getElementById('game-container');
 
-nextButton.addEventListener('click', () => {
-    currentIndex++;
-    if (currentIndex < storyText.length) {
-        storyContainer.textContent = storyText[currentIndex];
+nextButton.addEventListener('click', function() {
+    currentStoryPart++;
+    if (currentStoryPart < storyParts.length) {
+        storyTextElement.textContent = storyParts[currentStoryPart];
     } else {
-        storyContainer.textContent = "The adventure continues...";
-        nextButton.disabled = true; // Optionally disable the button after the last story bit
+        // Hide story and show game container
+        storyContainer.style.display = 'none';
+        gameContainer.style.display = 'block';
+        // Optionally initialize game here
     }
 });
