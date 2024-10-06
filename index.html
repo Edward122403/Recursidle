@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Incremental Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedursIdle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
-  <div id="story-container">
-    <p id="story-text">I'm so excited to play the new incremental game everybody's talking about!</p>
-    <button id="next-button">Next</button>
-  </div>
-  <script src="main.js"></script>
+    <div id="story-container">
+        <p id="story-text">Welcome to the new incremental game! Click next to continue...</p>
+        <button id="next-button">Next</button>
+    </div>
+
+    <div id="game-container" style="display: none;">
+        <h1>Gameplay</h1>
+        <p>Your gameplay starts here...</p>
+        <!-- Add your game elements here -->
+    </div>
 </body>
 </html>
